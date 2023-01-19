@@ -1,10 +1,13 @@
-import { Box } from "@chakra-ui/react";
+//import { Box } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
+import { Text, Flex,useColorModeValue } from "@chakra-ui/react";
+// import NavbarSec from "../components/NavbarSec";
+
 
 export default function OurFoodPage(){
 
-    return <Box>
-
-our food page
-
-    </Box>
+    return <>
+   {/* <NavbarSec/> */}
+    
+    </>
 }

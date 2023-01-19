@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import { Box, IconButton, Stack, useBreakpointValue,Grid,Card,Link } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
+import { Image } from '@chakra-ui/react';
 
 // Settings for the slider
 const settings = {
@@ -19,9 +20,72 @@ const settings = {
 };
 
 export default function AllPage(){
-    return <div>
-        AllPage
-    </div>
+    return <Box>
+      <Stack>
+      <Image src="https://www.elpolloloco.com/content/img/hero/hero.jpg"/>
+      <Image width={'100%'} height={'150px'} src="https://www.elpolloloco.com/content/img/hero/Tiles-Mobile.png"/>
+      </Stack>
+      <Stack>
+        <Grid gridTemplateColumns={{base:"repeat(1, 1fr)",sm:"repeat(2, 1fr)",lg:"repeat(2 , 1fr)"}}>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/menu-burritos_1280.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/burritosPage' >BURRITOS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/menu-family-dinners_1280.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >FAMILY DINNERS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/ChickenMeals_Category_M1_2020_1160x870.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >CHICKEN MEALS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/M4-ChickQuesCombo-1160x870.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >FIRE GRILLED COMBOS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/M3-DblChickenTostada-1160x870.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >TOSTADAS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/menu-bowls_1280.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >BOWLS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/menu-under-500-calories_1280.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >MEALMOVER FIT MENU</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/M3-ChickenAvoTaco-1160x870.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >STREET TACOS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/menu-kids-meals_1280.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >KIDS MEALS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/tacos_tacoalcarbon_two_1160x870.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >EXTRAS</Link>
+          </Card>
+          <Card>
+            <Image src="https://www.elpolloloco.com/content/img/menu/menu-sides_1280.webp" />
+            <Link color={'red'} fontSize={"30px"} fontWeight={"bold"} fontStyle={"italic"}
+            textAlign={"center"} paddingTop={"10px"} paddingBottom={"10px"} to='/' >SIDES, DRINKS & SALSAS</Link>
+          </Card>
+        </Grid>
+      </Stack>
+     
+    </Box>
 }
 
 
