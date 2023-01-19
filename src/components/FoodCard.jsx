@@ -12,8 +12,5 @@ export default function FoodCard({name,src,nutriImage,newBadge}){
         </Card>
         <Wrap><Badge display={newBadge?"block":"none"} colorScheme={"red"}>new</Badge><Heading size={"lg"}>{name}</Heading></Wrap>
         <NutriModal image={nutriImage} />
-
-
-    
     </Box>
 }
