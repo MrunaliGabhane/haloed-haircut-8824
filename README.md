@@ -25,4 +25,5 @@
     - `$git commit -m "<Your message>"` (message without angle brackets)
     - `$git push origin master`
 
-
+# How to start react sever
+    - `$npm start`
