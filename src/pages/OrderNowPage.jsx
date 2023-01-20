@@ -14,6 +14,11 @@ import {
   export default function OrderNowPage() {
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+        <Flex padding={"20px"}>
+          <Link to=""></Link>
+          <Button to="" margin={"10px"} background={"blue"} _hover={{background:"red"}}>Sign In</Button>
+          <Button margin={"10px"} background={"blue"} _hover={{background:"red"}}>Register</Button>
+        </Flex>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={4} w={'full'} maxW={'md'}>
             <Heading fontSize={'2xl'} color={'blue'} fontStyle={'Italic'} >WELCOME TO MEALMOVER</Heading>

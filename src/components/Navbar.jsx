@@ -35,6 +35,7 @@ import {
   } from '@chakra-ui/react'
 import { Input } from "@chakra-ui/react";
 import { AspectRatio } from "@chakra-ui/react";
+import MealMover from "../assets/MealMover.png"
 // function map(){
 //   return <div>
 //     <AspectRatio ratio={16 / 9}>
@@ -137,7 +138,7 @@ import { AspectRatio } from "@chakra-ui/react";
             
 
 
-            <Button _hover={{ bg: "red", color: "white" }} background={'red'} color={'white'}><Link to='/orderNowPage'>Place Order</Link></Button>
+            <Button _hover={{ bg: "blue", color: "white" }} background={'red'} color={'white'}><Link to='/orderNowPage'>Place Order</Link></Button>
             {/* <Text
               // textAlign={useBreakpointValue({ base: 'center', lg: 'center' })}
               // fontFamily={'heading'}
