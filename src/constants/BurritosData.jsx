@@ -1,10 +1,10 @@
 import nurti_1 from "../assets/nurti_1.png"
-
+import img1 from "../assets/img1.png"
 export const cardData = [
   {
     name: "LOCO SHREDDED BEEF BURRITO SHREDDED BEEF BURRITO GRILLERS",
     src: "https://www.elpolloloco.com/content/img/menu/M1-BeefGrillerswDip-761x561.webp",
-    nutriImage: nurti_1,
+    nutriImage: img1,
     newBadge: true,
   },
   {
