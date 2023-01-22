@@ -4,7 +4,7 @@ import { Box, IconButton, Stack, useBreakpointValue,Grid,Card,Link } from '@chak
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
-import { Image } from '@chakra-ui/react';
+import { Image, Text } from '@chakra-ui/react';
 
 // Settings for the slider
 const settings = {
@@ -24,6 +24,7 @@ export default function AllPage(){
       <Stack>
       <Image src="https://www.elpolloloco.com/content/img/hero/hero.jpg"/>
       <Image width={'100%'} height={'150px'} src="https://www.elpolloloco.com/content/img/hero/Tiles-Mobile.png"/>
+      
       </Stack>
       <Stack>
         <Grid gridTemplateColumns={{base:"repeat(1, 1fr)",sm:"repeat(2, 1fr)",lg:"repeat(2 , 1fr)"}}>

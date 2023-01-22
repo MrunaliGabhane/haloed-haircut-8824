@@ -4,11 +4,11 @@ import {
     ModalContent,
     ModalHeader,
     ModalFooter,
-    Button,
     ModalBody,
     ModalCloseButton,
     useDisclosure,
     Image,
+    Text
   } from '@chakra-ui/react'
   
 
@@ -17,12 +17,13 @@ import {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
       <>
-        <a onClick={onOpen}>Nutrition info</a>
+      <Text textAlign={"center"}>
+      <a  onClick={onOpen}>Nutrition info</a>
+      </Text>
   
         <Modal size={"4xl" } isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
-          <ModalContent>
-            <ModalHeader>Modal Title</ModalHeader>
+          <ModalContent><ModalHeader>Nutrition Info</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
              
