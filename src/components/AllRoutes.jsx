@@ -8,6 +8,7 @@ import FamilyPage from "../pages/FamilyPage";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
 import OrderNowPage from "../pages/OrderNowPage";
+import ChickenPage from "../pages/ChickenPage";
 export default function AllRoutes(){
 
 
@@ -18,6 +19,7 @@ export default function AllRoutes(){
         <Route path="/burritosPage" element={<BurritosPage/>}></Route>
         <Route path="/familyPage" element={<FamilyPage/>}></Route>
         <Route path="/ourfoodpage" element={<OurFoodPage />}></Route>
+        <Route path="/chickenPage" element={<ChickenPage/>}></Route>
         <Route path="/loginPage" element={<LoginPage/>}></Route>
         <Route path="/registerPage" element={<RegisterPage/>}></Route>
         <Route path="/orderNowPage" element={<OrderNowPage/>}></Route>
